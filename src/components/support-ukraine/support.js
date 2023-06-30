@@ -3,7 +3,6 @@
 import { supportArray } from "./support-array";
 
 const supportList = document.querySelector('.support-list-js');
-console.log(supportList);
 
 let number = 0;
 const serialNumber = value => {
