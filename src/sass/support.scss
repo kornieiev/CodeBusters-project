@@ -1,6 +1,5 @@
 // Svitlana
 
-
 .support {
     max-width: 335px;
     height: 352px;
@@ -23,4 +22,27 @@ margin-bottom: 40px;
 
 .support-title{
     display: flex;
+}
+
+.support-title{
+    color: #FFF;
+        font-size: 28px;
+        //font-family: DM Sans;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: -1.12px;
+}
+
+.support-number{
+    color: #FFF;
+}
+.support-item{
+    display: flex;
+    list-style: none;
+}
+
+.support-link{
+    color: #FFF;
+    filter: brightness(0)invert(1);
 }
