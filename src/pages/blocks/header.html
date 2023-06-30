@@ -6,7 +6,7 @@
   
   <nav class="header-navigation">
     <a href="" class="logo-link">
-        <svg class="logo-icon" width="24px" height="24px"></svg><span class="logo-text">Bookshelf</span>
+        <svg class="logo-icon" width="24px" height="24px"><use href="/src/images/sprite.svg#icon-logo"></use>></svg><svg class="logo-icon" width="77px" height="13px"><use href="/src/images/sprite.svg#icon-bookshelf"></use>></svg>
     </a>
     <ul class="navigation-menu">
         <li class="navigation-menu-item">
@@ -19,12 +19,16 @@
             </button>
         </li>
     </ul>
-    <div> 
-        <!-- Свайпер -->
+    <div class="navigation-right-block">
+        <div class="switch-field"> 
+            <input id="switch-theme" type="checkbox" name="switch-theme" class="switch-theme-check">
+            <label for="switch-theme" class="switch-theme-check-desc"></label>
+        </div>
+        <a href="">
+            <svg class="burger-menu-icon" width="28px" height="28px"><use href="/src/images/sprite.svg#icon-burger"></use></svg>
+        </a>
     </div>
-    <a href="">
-        <svg class="burger-menu-icon" width="28px" height="28px"></svg>
-    </a>
+    
     
   </nav>
 
