@@ -1,0 +1,48 @@
+// Svitlana
+
+.support {
+    max-width: 335px;
+    height: 352px;
+    padding: 24px 40px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    box-shadow: 0px 10px 10px #f5f5f71a;
+    background-image: radial-gradient(183.6% 183.01% at 59.76% -23.42%,
+            #4f2ee8 18.03%,
+            #ffffff 100%);
+}
+
+.support-block{
+display: flex;
+align-items: center;
+gap: 12px;
+margin-bottom: 40px;
+}
+
+.support-title{
+    display: flex;
+}
+
+.support-title{
+    color: #FFF;
+        font-size: 28px;
+        //font-family: DM Sans;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: -1.12px;
+}
+
+.support-number{
+    color: #FFF;
+}
+.support-item{
+    display: flex;
+    list-style: none;
+}
+
+.support-link{
+    color: #FFF;
+    filter: brightness(0)invert(1);
+}
