@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,24 +11,26 @@
     <ul>
       <li><a href="../index.html">HOME</a></li>
     </ul>
-    <hr />
-
     <include src="./pages/blocks/header.html"></include>
-    <hr />
-    <section class="shopping-list">
-      <h1 class="shopping-list-tittle">
-        Shopping <span class="sh-list-span">List</span>
-      </h1>
-      <div class="shopping-empty-container">
-        <h3 class="shopping-empty-text">
-          This page is empty, add some books and proceed to order.
-        </h3>
-        <img
-          class="shopping-empty-image"
-          src="../images/shopping-empty.png"
-          alt="books"
-        />
-      </div>
-    </section>
+    <div class="shopping-list-container">
+      <section class="shopping-list-left">
+        <include src="./pages/blocks/support.html"></include>
+      </section>
+      <section class="shopping-list shopping-list-right">
+        <h2 class="shopping-list-tittle">
+          Shopping <span class="sh-list-span">List</span>
+        </h2>
+        <div class="shopping-empty-container">
+          <h3 class="shopping-empty-text">
+            This page is empty, add some books and proceed to order.
+          </h3>
+          <img
+            class="shopping-empty-image"
+            src="../images/shopping-empty.png"
+            alt="books"
+          />
+        </div>
+      </section>
+    </div>
   </body>
 </html>
