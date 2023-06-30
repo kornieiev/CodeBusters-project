@@ -17,7 +17,7 @@ export const getCategories = () => {
   
 };
 
-// функція отримує посилання на популярні книги
+/// функція отримує посилання на популярні книги
 // функція повертає обєкт
 export const getBooksAllCategories = () => {
     return axios.get('https://books-backend.p.goit.global/books/top-books')
