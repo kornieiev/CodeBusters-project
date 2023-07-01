@@ -9,7 +9,7 @@ const baseUrl = 'https://books-backend.p.goit.global/books';
 // функція повертає обєкт
 export async function getCategories () {
     try {
-      const response = await axios.get(`${baseUrl}/category-listq`)
+      const response = await axios.get(`${baseUrl}/category-list`)
             
         return response;
       
