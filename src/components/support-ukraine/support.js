@@ -1,6 +1,7 @@
 // Svitlana
 
 import { supportArray } from "./support-array";
+import Swiper from 'swiper';
 
 const supportList = document.querySelector('.support-list-js');
 
@@ -9,7 +10,7 @@ const serialNumber = value => {
     return String(value).padStart(2, '0');
 }
 
-const markupCard = ({ title, url, img1x, img2x }, number) => `<li class="support-item">
+const markupCard = ({ title, url, img1x, img2x }, number) => `<li class="support-item swiper-slide">
                 <p class="support-number">${number}</p>
                 <a class="support-link" href="${url}" target="_blank" rel="noopener noreferrer nofollow">
                 <img srcset="${img1x} 1x, ${img2x} 2x" src="${img1x}" alt="${title}"></a>
