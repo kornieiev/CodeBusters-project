@@ -2,20 +2,26 @@
 
 // звідси стартуєм усю роботу з бекендом
 import axios from 'axios';
+import Notiflix from 'notiflix';
 
 const baseUrl = 'https://books-backend.p.goit.global/books';
 // функція отримує посилання на категорії
 // функція повертає обєкт
 export async function getCategories () {
     try {
-      const response = await axios.get(`${baseUrl}/category-list`)
+      const response = await axios.get(`${baseUrl}/category-listq`)
             
         return response;
       
-    }
-  catch (error) {
-    
-    console.log(error);
+    } catch (error) {
+      console.log(error);
+    Notiflix.Notify.failure('Oops!!! ERROR', {
+      width: '500px',
+      timeout: '5000',
+      fontSize: '25px',
+      opacity: 0.7,
+    });
+   
   }
   
 };
@@ -32,6 +38,12 @@ export async function getBooksAllCategories () {
   catch (error) {
     
     console.log(error);
+    Notiflix.Notify.failure('Oops!!! ERROR', {
+      width: '500px',
+      timeout: '5000',
+      fontSize: '25px',
+      opacity: 0.7,
+    });
   }
   
 };
@@ -51,6 +63,12 @@ export async function getBooksByCategory (category) {
   catch (error) {
     
     console.log(error);
+    Notiflix.Notify.failure('Oops!!! ERROR', {
+      width: '500px',
+      timeout: '5000',
+      fontSize: '25px',
+      opacity: 0.7,
+    });
   }
 
 };
@@ -69,6 +87,12 @@ export async function getBookById (bookId) {
   catch (error) {
     
     console.log(error);
+    Notiflix.Notify.failure('NO BOOK FOUND', {
+      width: '500px',
+      timeout: '5000',
+      fontSize: '25px',
+      opacity: 0.7,
+    });
   }
   
 };
