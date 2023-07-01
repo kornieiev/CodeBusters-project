@@ -1,3 +1,21 @@
+.shopping-list-container {
+  display: flex;
+}
+
+.shopping-list-left {
+  padding-top: 40px;
+  margin-left: 24px;
+}
+@media (max-width: 768px) {
+  .shopping-list-left {
+    display: none;
+  }
+}
+
+.shopping-list-right {
+  flex-grow: 1;
+}
+
 .shopping-list {
   padding: 40px 0;
 }
@@ -14,7 +32,7 @@
   margin-bottom: 120px;
   margin-top: 0;
   padding-left: 15px;
-  color: #111;
+  color: var(--strong-text-color);
   font-size: 32px;
   font-family: 'DM Sans';
   font-style: normal;
@@ -34,18 +52,19 @@
     font-size: 48px;
     line-height: 52px;
     letter-spacing: -1.92px;
+    padding-left: 40px;
   }
 }
 
 .sh-list-span {
-  color: #4f2ee8;
+  color: var(--accent-text-color);
 }
 
 .shopping-empty-text {
   margin-bottom: 14px;
   margin-top: 0;
   width: 244px;
-  color: rgba(0, 0, 0, 0.6);
+  color: var(--main-text-color);
   text-align: center;
   font-size: 14px;
   font-family: 'DM Sans';
