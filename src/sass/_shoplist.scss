@@ -146,6 +146,16 @@
 .shopping-list-cardlogo {
   width: 100px;
   height: 142px;
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    width: 116px;
+    height: 165px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 116px;
+    height: 165px;
+  }
 }
 
 .shopping-list-fullinfo {
