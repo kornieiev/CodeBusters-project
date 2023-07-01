@@ -6,7 +6,7 @@
   padding-top: 40px;
   margin-left: 24px;
 }
-@media (max-width: $tablet) {
+@media (max-width: $desktop) {
   .shopping-list-left {
     display: none;
   }
@@ -31,7 +31,7 @@
 .shopping-list-tittle {
   margin-bottom: 120px;
   margin-top: 0;
-  padding-left: 15px;
+  padding-left: 20px;
   color: var(--strong-text-color);
   font-size: 32px;
   font-family: 'DM Sans';
@@ -41,13 +41,15 @@
   letter-spacing: -1.28px;
 
   @media (min-width: $mobile) and (max-width: $tablet) {
+    padding-left: 32px;
     margin-bottom: 140px;
     font-size: 48px;
     line-height: 52px;
     letter-spacing: -1.92px;
   }
 
-  @media (min-width: 769px) and (max-width: $desktop) {
+  @media (min-width: $tablet) {
+    padding-left: 15px;
     margin-bottom: 140px;
     font-size: 48px;
     line-height: 52px;
@@ -113,17 +115,32 @@
   align-items: center;
 }
 .shopping-list-cardlist {
+  @media (min-width: $mobile) and (max-width: $tablet) {
+  }
+
+  @media (min-width: $tablet) {
+  }
 }
 
 .shopping-list-card {
   padding: 14px;
   height: 170px;
-  max-width: 335px;
+  width: 335px;
   display: flex;
   align-items: center;
   border-radius: 16px;
   border: 2px solid rgba(79, 46, 232, 0.4);
   background: var(--body-background-color-light);
+
+  @media (min-width: $mobile) and (max-width: $tablet) {
+    height: 213px;
+    width: 704px;
+  }
+
+  @media (min-width: $tablet) {
+    height: 213px;
+    width: 996px;
+  }
 }
 
 .shopping-list-cardlogo {
