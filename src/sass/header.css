@@ -1,7 +1,13 @@
+/* - Перевірити на повторювані з загальними стилі
+- Перенести visually hidden з основних стилів
+- Шрифти */
+
 .section.header {
     padding: 18px 20px;
-    border: 1.5px solid #111;
+    border: 2px solid #111;
     border-radius: 0px 0px 8px 8px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-navigation {
@@ -10,7 +16,7 @@
     align-items: center;
 }
 
-.logo.icon {
+.logo-icon {
     width: 24px;
     height: 24px;
 }
@@ -19,10 +25,10 @@
     display: none;
 }
 
-.navigation-right-block {
+.user-block {
     display: flex;
-    align-items: center;
     gap: 14px;
+    align-items: center;
 }
 
 .user-account-button {
@@ -87,17 +93,93 @@
         linear-gradient(#FFFFFF, #F7F7F7);
 }
 
-
 .burger-menu-icon {
     stroke: black;
 }
 
 @media screen and (min-width: 768px) {
-    
+    .section.header {
+        padding: 14px 32px;
+        height: 72px;
+    }
 
+    .header-navigation {
+        gap: 40px;
+    }
+
+    .navigation-menu {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        padding-inline-start: 0;
+    }
+
+    .menu-link {
+        display: none;
+    }
+
+    .user-account-button {
+        display: block;
+    }
+
+    .page-button {
+        padding: 7px 16px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        border-radius: 36px;
+        font-size: 14px;
+        /* font-family: 'DM Sans'; */
+        font-weight: 700;
+        line-height: 1.29;
+        letter-spacing: -0.56px;
+    }
+
+    .page-button.active {
+        background-color: #EAC645;
+    }
+
+    .user-block {
+        gap: 24px;
+    }
+
+    .user-account-button {
+        height: 45px;
+        padding: 8px 12px;
+        display: flex;
+        align-items: center;
+        background-color: #4F2EE8;
+        border: none;
+        border-radius: 36px;
+    }
+
+    .user-icon {
+        margin-right: 9px;
+    }
+
+    .user_name {
+        margin-right: 4px;
+        color: #FFF;
+        font-size: 22px;
+        /* font-family: DM Sans; */
+        font-weight: 700;
+        letter-spacing: -0.44px;
+
+    }
 }
 
 @media screen and (min-width: 1440px) {
-    
+    .section.header {
+        padding: 19px 24px;
+    }
 
+    .header-navigation {
+        gap: 76px;
+    }
+
+    .navigation-menu {
+        gap: 8px;
+    }
 }
