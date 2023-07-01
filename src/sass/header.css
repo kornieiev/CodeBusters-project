@@ -4,6 +4,7 @@
 
 .section.header {
     position: sticky;
+    z-index: 10;
     top: 0;
     padding: 18px 20px;
     border: 2px solid #111;
@@ -104,6 +105,7 @@
 .page-button {
     padding: 7px 16px;
     height: 34px;
+    width: fit-content;
     display: flex;
     align-items: center;
     background-color: transparent;
@@ -139,7 +141,6 @@
 
 .dropdown-menu {
     position: relative;
-    z-index: -1;
     top: -72px;
     height: 100vh;
     background-image: url(/src/images/group-min.png), 
@@ -181,16 +182,14 @@
 
 .page-button.dropdown {
     color: #FFF;
+    fill: #FFF;
 }
 
 .page-button.dropdown.active {
     position: relative;
     left: 16px;
     color: #000;
-}
-
-.shopping-list-icon.dropdown {
-    fill: #FFF;
+    fill: #111;
 }
 
 .logout-button {
