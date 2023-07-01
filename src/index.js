@@ -1,6 +1,6 @@
 import './components/support-ukraine/support-array';
 import './components/support-ukraine/support';
-
+import './components/categories'
 ////////////////////////////////////////// тест коду api
 // import { getCategories } from '../src/api';
 // import { getBooksAllCategories } from '../src/api';
