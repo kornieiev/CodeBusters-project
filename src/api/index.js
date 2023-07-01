@@ -56,7 +56,7 @@ export async function getBooksAllCategories () {
 export async function getBooksByCategory (category) {
     try {
       const response = axios.get(`${baseUrl}/category?category=${category}`)
-        console.log(response.data);
+      
         return response;
       
     }
