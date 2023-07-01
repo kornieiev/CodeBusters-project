@@ -102,6 +102,10 @@
     stroke: black;
 }
 
+.close-menu-icon {
+    stroke: #000;
+}
+
 .page-button {
     padding: 7px 16px;
     height: 34px;
@@ -126,6 +130,11 @@
 .page-button.active {
     background-color: #EAC645;
 }
+
+/* .shopping-list-circle {
+    align-self: start;
+    fill: #4F2EE8;
+} */
 
 .user_name {
     margin-right: 4px;

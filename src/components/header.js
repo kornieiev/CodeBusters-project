@@ -1,5 +1,6 @@
 const links = document.querySelectorAll('.navigation a');
-const burgerEl = document.querySelector('.menu-link');
+const burgerEl = document.querySelector('.menu-burger-link');
+const closeEl = document.querySelector('.menu-close-link');
 const dropMenuEl = document.querySelector('.dropdown-menu');
 const switchEl = document.getElementById('switch-theme');
 let savedTheme = localStorage.getItem("ui-theme");
@@ -32,7 +33,10 @@ function toggleSwitchEl() {
 
 function toggleDropMenu (event) {
     event.preventDefault();
-    dropMenuEl.classList.toggle('visually-hidden')
+    dropMenuEl.classList.toggle('visually-hidden');
+    burgerEl.classList.toggle('visually-hidden');
+    closeEl.classList.toggle('visually-hidden');
+
     // if (element.classList.contains('visible')) {
     //     disableScroll();
     //   } else {
