@@ -2,7 +2,7 @@
   border-radius: 8px;
 }
 .bookcard-name {
-  color: #111;
+  color: var(--black);
   font-size: 16px;
   font-family: DM Sans;
   font-style: normal;
@@ -13,7 +13,7 @@
   margin: 14px 0 4px 0;
 }
 .bookcard-author {
-  color: #b4afaf;
+  color: var(--main-text-color);
   font-size: 12px;
   font-family: DM Sans;
   font-style: italic;
@@ -23,6 +23,4 @@
   margin: 0;
 }
 .bookcard {
-  width: 335px;
-  height: 535px;
 }
