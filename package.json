@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://kornieiev.github.io/CodeBusters",
+  "homepage": "https://kornieiev.github.io/CodeBusters-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /CodeBusters/"
+    "build": "parcel build src/*.html --public-url /CodeBusters-project/"
   },
   "repository": {
     "type": "git",
